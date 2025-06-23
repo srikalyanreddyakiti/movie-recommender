@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="mb-4">Movie Recommendation System</h1>
+            <form id="recommendation-form" method="POST" action="/recommend" class="d-flex justify-content-center mb-4">
+                <select name="query" id="query" class="form-select w-50 me-2" required>
+                    <option value="" disabled selected>Please select a genre</option>
+                    <option value="drama">Drama</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="romance">Romance</option>
+                    <option value="action">Action</option>
+                    <option value="horror">Horror</option>
+                    <option value="documentary">Documentary</option>
+                    <option value="crime">Crime</option>
+                    <option value="no-genres-listed">No Genres Listed</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="children">Children</option>
+                    <option value="animation">Animation</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="war">War</option>
+                    <option value="western">Western</option>
+                    <option value="musical">Musical</option>
+                    <option value="film-noir">Film Noir</option>
+                    <option value="imax">IMAX</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Get Recommendations</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
